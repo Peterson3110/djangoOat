@@ -23,7 +23,7 @@ class Estoque(models.Model):
     ]
 
     instru = models.CharField('Escolha o Produto', max_length=8, choices=INSTRUMENTOS, default=GUITARRA,)
-    quantidade = models.BigIntegerField("Quantidade de Produtos",max_length=20)
+    quantidade = models.BigIntegerField("Quantidade de Produtos")
     endereco = models.CharField('Endereço', max_length=100)
     fornecedor = models.CharField(max_length=100)
 

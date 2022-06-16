@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from MyApp import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('',views.Homepage),
-    path('',views.Cadastro),
+    path('admin/', admin.site.urls),
 ]
